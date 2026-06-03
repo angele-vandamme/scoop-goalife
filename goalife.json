@@ -9,7 +9,7 @@
     "script": [
       "$installer = \"$dir\\Goalife.Setup.1.0.0.exe\"",
       "Start-Process -FilePath $installer -ArgumentList '/S' -Wait",
-      "New-Item -ItemType SymbolLink -Path \"$dir\\goalife.exe\" -Target \"$env:LOCALAPPDATA\\goalife\\goalife.exe\" -Force"
+      "New-Item -ItemType SymbolicLink -Path \"$dir\\goalife.exe\" -Target \"$env:LOCALAPPDATA\\goalife\\goalife.exe\" -Force"
     ]
   },
   "uninstaller": {
