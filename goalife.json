@@ -17,7 +17,11 @@
       "if (Test-Path $uninstaller) { Start-Process -FilePath $uninstaller -ArgumentList '/S' -Wait }"
     ]
   },
-  "shortcuts": [
-    ["$env:LOCALAPPDATA\\goalife\\goalife.exe", "Goalife"]
-  ]
+  "architecture": {
+    "64bit": {
+      "shortcuts": [
+        ["../../../../AppData/Local/goalife/goalife.exe", "Goalife"]
+      ]
+    }
+  }
 }
