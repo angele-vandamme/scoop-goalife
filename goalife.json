@@ -3,7 +3,7 @@
   "description": "Goalife - Application de gestion d'objectifs",
   "homepage": "https://github.com/angele-vandamme/goalife",
   "license": "MIT",
-  "url": "https://github.com/angele-vandamme/goalife/releases/download/v1.0.0/Goalife.Setup.1.0.0.exe",
+  "url": "https://github.com/angele-vandamme/scoop-goalife/releases/download/v1.0.0/Goalife.Setup.1.0.0.exe",
   "hash": "sha256:1bdcd0af6a19a098a38b75e2cafe5b4cb7dfba8d35fbfbf86d5e9f886f78a2d1",
   "installer": {
     "script": [
