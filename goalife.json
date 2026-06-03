@@ -1,0 +1,23 @@
+{
+  "version": "1.0.0",
+  "description": "Goalife - Application de gestion d'objectifs",
+  "homepage": "https://github.com/angele-vandamme/goalife",
+  "license": "MIT",
+  "url": "https://github.com/angele-vandamme/goalife/releases/download/v1.0.0/Goalife-Setup-1.0.0.exe",
+  "hash": "sha256:1BDCD0AF6A19A098A38B75E2CAFE55734DE9E649963B856E597F4123044ACE7A",
+  "installer": {
+    "script": [
+      "$installer = \"$dir\\Goalife-Setup-1.0.0.exe\"",
+      "Start-Process -FilePath $installer -ArgumentList '/S' -Wait"
+    ]
+  },
+  "uninstaller": {
+    "script": [
+      "$uninstaller = \"$env:LOCALAPPDATA\\goalife\\Uninstall goalife.exe\"",
+      "if (Test-Path $uninstaller) { Start-Process -FilePath $uninstaller -ArgumentList '/S' -Wait }"
+    ]
+  },
+  "shortcuts": [
+    ["$env:LOCALAPPDATA\\goalife\\goalife.exe", "Goalife"]
+  ]
+}
